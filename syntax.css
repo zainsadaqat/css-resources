@@ -29,10 +29,17 @@ div.class-name1.class-name2#id1 {
   property: value; // Important point is that only one html element and id can be used as a selector
 }
 
-// it means before comma selectors will be applied or anything that have after comma selector
+// it means before comma selectors will be applied or as well as anything that have after comma selector
 div.class-name1.class-name2#id1, .green {
   property: value; // Important point is that only one html element and id can be used as a selector
 }
+
+For Example
+<style>
+.header-text, .footer-text { color: purple; }
+<header class="header-text">Header has purple Text</header>
+<footer class="footer-text">Footer has Purple Text</footer>
+
 
 // everything after div. it works like P is child element of Div
 div p {
