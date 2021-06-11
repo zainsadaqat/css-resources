@@ -24,7 +24,20 @@ div.class-name1.class-name2.class-name3 {
   property: value;
 }
 
+// it means div has class-name1 and class-name2 and id1
 div.class-name1.class-name2#id1 {
   property: value; // Important point is that only one html element and id can be used as a selector
-  
+}
+
+// it means before comma selectors will be applied or anything that have after comma selector
+div.class-name1.class-name2#id1, .green {
+  property: value; // Important point is that only one html element and id can be used as a selector
+}
+
+// everything after div. it works like P is child element of Div
+div p {
+  property: value;
+}
+
+
 */
