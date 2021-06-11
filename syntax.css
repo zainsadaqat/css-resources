@@ -1,0 +1,30 @@
+/* 
+
+selector {
+  property: value;
+}
+
+h1 {
+  color: red;
+}
+
+.class-name {
+  font-family: Poppins;
+}
+
+#id1 {
+  font-size: 2em; // Each page can have only one #id1 ( IDs are unique )
+}
+
+div.class-name {
+  property: value; // All divs with .class-name
+}
+
+div.class-name1.class-name2.class-name3 {
+  property: value;
+}
+
+div.class-name1.class-name2#id1 {
+  property: value; // Important point is that only one html element and id can be used as a selector
+  
+*/
