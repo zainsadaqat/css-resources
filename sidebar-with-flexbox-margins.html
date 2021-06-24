@@ -4,55 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar with Flexbox and Margins</title>
+    <title>Sidebar with Flexbox and Margins</title>
     <style>
       * {
         box-sizing: border-box;
-        padding: 0;
         margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        color: #ccc;
+        font-weight: 400;
       }
-      body {
-        font-size: 62.5%;
-        font-family: Arial, Helvetica, sans-serif;
+      img {
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px 20% #000;
       }
       header {
-        padding: 1em;
+        background-color: lightyellow;
+        padding: 2em;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
         display: flex;
-        align-items: center;
+        flex-direction: column;
       }
       .nav {
-        /* 
-           header is parent, and nav is its child.
-           By default display: flex; effects the child as it takes only width: auto for their child
-           when we set flex-basis: 100%; in child then it takes complete space for its child.
-
-           OR 
-
-           We can use flex-grow: 1; insteaf of flex-basis: 100%; both works similar
-         */
-        /* flex-basis: 100%; */
+        margin-top: 1em;
         flex-grow: 1;
       }
       .nav__list {
-        margin: 0;
-        padding: 0;
-        gap: 1em;
-        margin-left: 1em;
-        list-style: none;
+        height: 100%;
         display: flex;
+        flex-direction: column;
+      }
+
+      .nav__list li:nth-of-type(6) {
+        margin-top: auto;
       }
       .nav__list a {
-        color: lightseagreen;
-        text-decoration: none;
-        font-size: 1.5rem;
-      }
-      .nav__list a:hover,
-      .nav__list a:focus {
-        color: lightslategrey;
-        font-weight: bold;
-      }
-      .nav__list li:nth-of-type(6) {
-        margin-left: auto;
+        margin: 1em 0;
       }
     </style>
   </head>
