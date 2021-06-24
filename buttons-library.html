@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons Library</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .btn {
+        background-color: hsl(0, 0%, 90%);
+        border: 1px solid hsl(0, 0%, 70%);
+        border-radius: 0.4em;
+        outline: none;
+        cursor: pointer;
+        display: block;
+        padding: 0.5em 1em;
+        margin: 1em 0px;
+      }
+
+      .btn:hover,
+      .btn:focus {
+        background-color: hsl(0, 0%, 80%);
+        box-shadow: 0 0 5px 0 hsl(0, 0%, 70%);
+      }
+
+      .btn.btn-primary {
+        background-color: hsl(270, 70%, 50%);
+        color: white;
+        border-color: hsl(270, 70%, 30%);
+      }
+      .btn.btn-primary:hover,
+      .btn.btn-primary:focus {
+        background-color: hsl(270, 70%, 40%);
+        box-shadow: 0 0 5px 0 hsl(270, 70%, 30%);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">Default</button>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn">Accent</button>
+    <button class="btn">Danger</button>
+    <button class="btn">Large</button>
+    <button class="btn">Small</button>
+    <button class="btn">Pill</button>
+    <button class="btn">Custom</button>
+  </body>
+</html>

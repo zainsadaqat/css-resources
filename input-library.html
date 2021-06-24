@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Library</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      input {
+        margin: 1rem;
+      }
+      .input {
+        border: 1px solid #aaa;
+        outline: none;
+        font-size: inherit;
+        padding: 0.5em;
+        border-radius: 0.2em;
+        display: block;
+      }
+      .input:focus {
+        border-color: #0af;
+        box-shadow: 0 0 5px 0 #0af;
+      }
+      .input.input-success {
+        border-color: rgb(0, 95, 8);
+      }
+      .input.input-success:focus {
+        border-color: rgb(0, 110, 10);
+        box-shadow: 0 0 5px 0 rgb(0, 95, 8);
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" class="input" value="Default" />
+    <input type="text" class="input input-success" value="Primary" />
+    <input type="text" class="input" value="Accent" />
+    <input type="text" class="input" value="Secondary" />
+    <input type="text" class="input" value="Default" />
+    <input type="text" class="input" value="Default" />
+  </body>
+</html>
