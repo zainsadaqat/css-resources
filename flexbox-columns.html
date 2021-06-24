@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box Columns</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .content-sidebar {
+        padding: 20px;
+        background-color: lightblue;
+        min-height: 100vh;
+      }
+
+      .content-sidebar-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+      }
+      .content-sidebar-container > *:nth-child(1) {
+        flex: 1 1 60%;
+      }
+      .content-sidebar-container > *:nth-child(2) {
+        flex: 1 1 40%;
+      }
+
+      .gridish {
+        padding: 20px;
+        background-color: rgb(231, 255, 203);
+        min-height: 100vh;
+      }
+      .gridish-container {
+        display: flex;
+        flex-wrap: wrap; /* for Gridish boxes */
+        gap: 1em;
+      }
+      .gridish-container > * {
+        flex: 1 1 10em; /* for Gridish boxes */
+      }
+      .even-columns {
+        padding: 20px;
+        background-color: khaki;
+        min-height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        gap: 1em;
+      }
+      .container > * {
+        flex-basis: 100%; /* for equal width columns */
+      }
+      h1 {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .item {
+        background-color: rgb(255, 203, 152);
+        min-height: 200px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="even-columns">
+      <h1>Even Columns</h1>
+      <div class="container">
+        <div class="item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore
+          quasi excepturi qui dignissimos tenetur maxime error consequatur ea
+          eum, labore porro dolor, vitae dolores. Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Assumenda quis necessitatibus commodi
+          animi rem quam aspernatur ipsam obcaecati tempora fugit facilis
+          adipisci nemo quia quod nihil alias, inventore minus minima voluptatem
+          eos. Aliquam placeat cum perspiciatis? Tenetur vel consequuntur sint
+          ratione totam optio odit dicta officia eos accusantium fuga non
+          recusandae harum architecto, saepe soluta illo hic aliquid cum
+          voluptate?
+        </div>
+        <div class="item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          mollitia neque quae odit facere, aperiam sunt vitae rerum porro
+          tempora quam quod asperiores adipisci aut aliquid dolore sit fuga
+          cupiditate cumque quia possimus? Dolore, molestiae. Distinctio
+          temporibus nemo magni reprehenderit facilis officiis consequatur,
+          minima provident!
+        </div>
+        <div class="item">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed,
+          quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Minus, in!
+        </div>
+      </div>
+    </div>
+
+    <div class="gridish">
+      <h1>Gridish</h1>
+      <div class="gridish-container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </div>
+
+    <div class="content-sidebar">
+      <h1>Content Sidebar</h1>
+      <div class="content-sidebar-container">
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </div>
+  </body>
+</html>
