@@ -34,10 +34,12 @@ grid-row: 1 / 3;
 /* in the above, we have two rows with 4 columns something like 8 boxes in 2 rows
 
 ```
-
+## Recommended Approach
 ```css
 .parent {
 display: grid;
+gap: 1.5rem;
+grid-auto-columns: 1fr; /* gives equal size columns */
 grid-template-areas: 
 'one one two five' 
 'three four four five';
