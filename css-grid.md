@@ -5,7 +5,7 @@
 
 One of the hardest thing to do while using the Grid might be to decide how many columns we are gonna need. we can decide that by checking the number of boxes we might have if the design is already there.
 
-`grid-template-columns` property is used to decide the number of columns in grid container.
+`grid-template-columns` property is used to decide the number of columns in grid container. it is applied on the parent property.
 
 ```css
 display: grid;
@@ -19,3 +19,19 @@ we don't need to create row explicitly because by setting columns to 3 will auto
   grid-column: span 2; /* it's shorthand property for grid-column-start and grid-column-end */
 }
 ```
+
+```css
+grid-row-start: 1;
+grid-row-end: 3;
+/* or we can use shorthand property for that it does the same job and it is applied on the child property */
+grid-row: 1 / 3; 
+```
+
+```css
+/* when we have complex layout then we use grid-template-areas approach */
+
+```
+
+ 
+> with min-width defined, the css without media queries will be used for the mobile first development
+
