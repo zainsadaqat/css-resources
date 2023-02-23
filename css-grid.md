@@ -9,8 +9,7 @@ One of the hardest thing to do while using the Grid might be to decide how many 
 
 ```css
 display: grid;
-grid-template-columns: 1fr 1fr 1fr; //divide equal amount of space between each column
-or
-grid-template-columns: repeat(3, 1fr) //means 3 columns with equal amount of space
+grid-template-columns: 1fr 1fr 1fr; <!-- divide equal amount of space between each column OR -->
+grid-template-columns: repeat(3, 1fr) <!-- means 3 columns with equal amount of space -->
 ```
 we don't need to create row explicitly because by setting columns to 3 will automatically create a second row for us. we don't need to create the complexity.
