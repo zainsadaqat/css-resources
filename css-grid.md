@@ -29,9 +29,27 @@ grid-row: 1 / 3;
 
 ```css
 /* when we have complex layout then we use grid-template-areas approach */
+'one two three four'
+'five six seven eight';
+/* in the above, we have two rows with 4 columns something like 8 boxes in 2 rows
 
 ```
 
+```css
+.parent {
+display: grid;
+grid-template-areas: 
+'one one two five' 
+'three four four five';
+}
+.child:nth-child(1) { grid-area: one; }
+.child:nth-child(2) { grid-area: two; }
+.child:nth-child(3) { grid-area: three; }
+.child:nth-child(4) { grid-area: four; }
+.child:nth-child(5) { grid-area: five; }
+.child:nth-child(6) { grid-area: six; }
+```
+
  
-> with min-width defined, the css without media queries will be used for the mobile first development
+> with min-width defined, the css without media queries will be used for the mobile size and code written inside the min-width block will be used for the desktop or tablet size screens etc.
 
