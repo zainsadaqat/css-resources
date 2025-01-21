@@ -14,6 +14,72 @@ grid-template-columns: repeat(3, 1fr) /* means 3 columns with equal amount of sp
 ```
 we don't need to create row explicitly because by setting columns to 3 will automatically create a second row for us. we don't need to create the complexity.
 
+
+## Let's talk about grid-template-columns
+
+```css
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+```
+
+- repeat(auto-fill, minmax(250px, 1fr)) creates as many columns as can fit in the container.
+- Each column has a minimum width of 250px (so they don’t get too narrow).
+- If there’s extra space, columns stretch up to 1fr (filling remaining space evenly).
+- This keeps your grid responsive, automatically wrapping into new rows when columns no longer fit.
+
+### 1. repeat(...)
+
+Tells the grid to create repeated columns (or rows) based on the pattern you specify.
+
+### 2. auto-fill
+
+Automatically creates as many columns as will fit in the container, wrapping onto new rows when necessary.
+
+### 3. minmax(...)
+
+Sets a minimum and maximum size for each grid track (column or row).
+
+#### For example
+
+minmax(250px, 1fr) means:
+- Don’t go smaller than 250px,
+- But grow up to fill remaining space (1fr).
+
+#### Another Quick Example
+
+```css
+.grid-container {
+  display: grid;
+  /* Create columns that are at least 200px and stretch to fill space */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+```
+This creates a responsive grid where each column is at least 200px wide but can expand to fill extra space, and new columns wrap as needed.
+
+### What is 1fr?
+
+fr stands for “fraction” unit in CSS Grid.
+1fr means “take up one fraction of the available space.”
+
+### Can we use 2fr or 0.5fr?
+
+Yes, you can use any fraction value like 2fr, 3fr, or 0.5fr.
+For example, 2fr means “twice as much space” as 1fr in the same grid.
+
+One fraction of available space” means that after any fixed-width columns (like 100px) are accounted for, the remaining free space in the container is split into fractions. If a track is defined as 1fr, it gets exactly one share of that leftover space.
+
+For example, if you have 2 columns defined as 1fr and 2fr and there are 300px of free space:
+- The 1fr column gets 100px (1 share).
+- The 2fr column gets 200px (2 shares).
+
+Think of the container’s width as a pie you’re slicing up.
+
+- If you say `grid-template-columns: 1fr 1fr 1fr;`, you’re cutting the pie into 3 equal slices. Each slice is “1 fraction” of what’s left after any fixed-sized columns.
+
+- If you say `grid-template-columns: 2fr 1fr;`, you’re cutting the pie into 3 total slices (2 for the first column, 1 for the second), so the first column gets twice as much space as the second.
+
+In other words, 1fr is “one share” of whatever space remains, 2fr is “two shares,” etc. The browser adds up all the fr values and divides leftover space among them proportionally.
+
 ```css
 .grid-col-span-2 {
   grid-column: span 2; /* it's shorthand property for grid-column-start and grid-column-end */
