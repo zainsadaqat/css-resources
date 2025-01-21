@@ -80,6 +80,8 @@ Think of the container’s width as a pie you’re slicing up.
 
 In other words, 1fr is “one share” of whatever space remains, 2fr is “two shares,” etc. The browser adds up all the fr values and divides leftover space among them proportionally.
 
+## Grid Column Span
+
 ```css
 .grid-col-span-2 {
   grid-column: span 2; /* it's shorthand property for grid-column-start and grid-column-end */
