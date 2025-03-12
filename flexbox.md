@@ -21,3 +21,24 @@ This property enables the flexbox layout and makes all direct children flex item
   display: flex;
 }
 ```
+
+### 1.2 flex-direction
+
+Defines the main axis along which the items are placed.
+
+#### Value	Description
+- row (default)	Items align horizontally (left to right)
+- row-reverse	Items align horizontally (right to left)
+- column	Items align vertically (top to bottom)
+- column-reverse	Items align vertically (bottom to top)
+
+#### Example
+```css
+.container {
+  display: flex;
+  flex-direction: column;
+}
+```
+
+#### Use Case
+Used when designing vertical navigation menus or sidebars.
