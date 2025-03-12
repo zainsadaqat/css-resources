@@ -131,3 +131,40 @@ Controls whether flex items wrap to the next line.
 #### Use Case
 Used in responsive layouts where items need to wrap on smaller screens.
 
+## 2. Flex Item Properties 📦
+
+These properties are applied to child items inside the flex container.
+
+### 2.1 flex-grow
+Defines how much a flex item can grow relative to others.
+
+#### Value	Description
+0 (default)	Item does not grow
+1+	Item grows based on available space
+
+#### Example
+
+```css
+.item {
+  flex-grow: 1;
+}
+```
+#### Use Case
+
+Used in responsive layouts where some elements need to expand dynamically.
+
+### 2.2 flex-shrink
+Defines how much a flex item can shrink relative to others.
+
+#### Value	Description
+1 (default)	Item shrinks if needed
+0	Item does not shrink
+#### Example
+```css
+.item {
+  flex-shrink: 0;
+}
+```
+
+#### Use Case
+Used when an item should not shrink, like a logo in a navbar.
