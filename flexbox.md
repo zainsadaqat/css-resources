@@ -116,8 +116,8 @@ Controls whether flex items wrap to the next line.
 
 #### Value	Description
 - nowrap (default)	Items stay in one line, shrinking if needed
-- wrap	Items wrap onto the next line if necessary
-- wrap-reverse	Items wrap in reverse order
+- wrap	Items wrap onto the next line if necessary. The second row appears below the first row.
+- wrap-reverse	Items wrap in reverse order. The second row appears above the first row.
 
 #### Example
 
