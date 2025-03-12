@@ -139,8 +139,8 @@ These properties are applied to child items inside the flex container.
 Defines how much a flex item can grow relative to others.
 
 #### Value	Description
-0 (default)	Item does not grow
-1+	Item grows based on available space
+- 0 (default)	Item does not grow
+- 1+	Item grows based on available space
 
 #### Example
 
@@ -157,8 +157,8 @@ Used in responsive layouts where some elements need to expand dynamically.
 Defines how much a flex item can shrink relative to others.
 
 #### Value	Description
-1 (default)	Item shrinks if needed
-0	Item does not shrink
+- 1 (default)	Item shrinks if needed
+- 0	Item does not shrink
 #### Example
 ```css
 .item {
@@ -168,3 +168,82 @@ Defines how much a flex item can shrink relative to others.
 
 #### Use Case
 Used when an item should not shrink, like a logo in a navbar.
+
+### 2.3 flex-basis
+
+Sets the initial size of a flex item before it grows/shrinks.
+
+#### Value	Description
+- auto (default)	Size depends on content
+- px, %, rem, etc.	Fixed size
+
+#### Example:
+
+```css
+.item {
+  flex-basis: 200px;
+}
+```
+#### Use Case
+Used in grid-based layouts where elements have predefined sizes.
+
+### 2.4 flex (Shorthand)
+
+Shorthand for flex-grow, flex-shrink, and flex-basis.
+
+#### Value	Equivalent
+- flex: 1;	flex-grow: 1; flex-shrink: 1; flex-basis: 0;
+- flex: 0 1 auto;	Default value
+
+#### Example
+
+```css
+.item {
+  flex: 1;
+}
+```
+#### Use Case
+Used for equal-width layouts.
+
+2.5 order
+Defines the order of flex items.
+
+#### Value	Description
+- 0 (default)	Normal order
+- 1+	Higher numbers appear later
+- -1	Negative numbers appear earlier
+
+#### Example
+
+```css
+.item {
+  order: -1;
+}
+```
+#### Use Case
+Used to rearrange content for mobile-first designs.
+
+### 2.6 align-self
+
+Overrides align-items for a specific item.
+
+#### Value	Description
+- auto (default)	Inherits from align-items
+- flex-start	Aligns to the start of the cross axis
+- flex-end	Aligns to the end of the cross axis
+- center	Aligns to the center
+- baseline	Aligns to text baseline
+- stretch	Stretches to fill
+
+#### Example
+
+```css
+.item {
+  align-self: center;
+}
+```
+
+#### Use Case
+Used when only one item needs different alignment.
+
+
