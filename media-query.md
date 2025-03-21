@@ -126,3 +126,116 @@ Portrait (vertical screen) or landscape (horizontal screen):
   }
 }
 ```
+
+### 4️⃣ Based on Resolution (Retina & HD Screens)
+
+```css
+@media (min-resolution: 2dppx) {
+  body {
+    background-image: url("high-res-image.png");
+  }
+}
+```
+
+- 1dppx = Normal display
+- 2dppx = Retina display (Apple)
+- 3dppx = Ultra HD display
+
+### 5️⃣ Based on Dark Mode (Color Scheme)
+
+```css
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+```
+
+## 🔹 Combining Multiple Conditions
+
+You can combine multiple conditions with logical operators:
+
+### 👉 Using and (Both conditions must be true)
+
+```css
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  body {
+    background-color: yellow;
+  }
+}
+```
+
+### 👉 Using or (Comma ,)
+
+```css
+@media (max-width: 600px), (orientation: portrait) {
+  body {
+    background-color: red;
+  }
+}
+```
+
+### 👉 Using not (Excluding a condition)
+
+```css
+@media not (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+}
+```
+
+## 🔹 Best Practices for Media Queries
+
+✅ Use Mobile-First Approach (Start with smaller screens).
+✅ Use Relative Units (em, %, rem instead of px).
+✅ Limit the Number of Breakpoints (3-5 is ideal).
+✅ Use CSS Grid & Flexbox instead of too many media queries.
+
+## 🔹 Common Breakpoints (Industry Standard)
+
+Here are the most commonly used screen sizes:
+
+Device Type	Breakpoint (Width)
+Small Mobile	max-width: 480px
+Mobile (default)	max-width: 768px
+Tablet	min-width: 768px and max-width: 1024px
+Laptop	min-width: 1024px and max-width: 1440px
+Desktop	min-width: 1440px
+
+## 🔹 Real-World Example (Responsive Layout)
+
+```css
+/* Default (Mobile) */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    justify-content: space-between;
+  }
+}
+```
+
+### 📌 This ensures:
+
+✅ Mobile: Stacks items vertically.
+✅ Tablet: Arranges items horizontally.
+✅ Desktop: Aligns items with space between.
+
+✔ Media Queries make websites responsive by applying styles based on screen width, device type, resolution, and more.
+✔ Mobile-First Approach is recommended for better performance.
+✔ Use min-width for scaling up (mobile first) and max-width for scaling down (desktop first).
+✔ Combine conditions using and, or, not for advanced styling.
+
