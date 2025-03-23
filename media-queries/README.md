@@ -1,4 +1,4 @@
-# Media Query in CSS 
+# Media Query in CSS
 
 CSS media queries allow you to make your website responsive, meaning it adjusts based on different screen sizes, devices, or specific conditions (like screen resolution, color scheme, or orientation).
 
@@ -79,10 +79,10 @@ body {
     font-size: 14px;
   }
 }
-
 ```
 
 ### 2️⃣ Based on Device Type
+
 You can target different device types:
 
 ```css
@@ -197,12 +197,12 @@ You can combine multiple conditions with logical operators:
 
 Here are the most commonly used screen sizes:
 
-Device Type	Breakpoint (Width)
-Small Mobile	max-width: 480px
-Mobile (default)	max-width: 768px
-Tablet	min-width: 768px and max-width: 1024px
-Laptop	min-width: 1024px and max-width: 1440px
-Desktop	min-width: 1440px
+Device Type Breakpoint (Width)
+Small Mobile max-width: 480px
+Mobile (default) max-width: 768px
+Tablet min-width: 768px and max-width: 1024px
+Laptop min-width: 1024px and max-width: 1440px
+Desktop min-width: 1440px
 
 ## 🔹 Real-World Example (Responsive Layout)
 
@@ -238,4 +238,3 @@ Desktop	min-width: 1440px
 ✔ Mobile-First Approach is recommended for better performance.
 ✔ Use min-width for scaling up (mobile first) and max-width for scaling down (desktop first).
 ✔ Combine conditions using and, or, not for advanced styling.
-
