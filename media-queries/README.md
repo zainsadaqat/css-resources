@@ -1,6 +1,6 @@
 # Media Query in CSS   
  
-CSS media queries allow you to make your website responsive, meaning it adjusts based on different screen sizes, devices, or specific conditions (like screen resolution, color scheme, or orientation).
+CSS media queries allow you to make your website responsive, meaning it adjusts based on different screen sizes, devices, or specific conditions (like screen resolution, color scheme, or orientation). 
 
 A media query in CSS applies styles only when a specified condition is met. For example, you can change the font size when the screen width is less than 600px: 
 
