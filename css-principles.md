@@ -1,3 +1,5 @@
+# CSS Principles
+
 CSS is the foundation of styling websites, and understanding CSS principles, document flow, and units is essential for creating responsive and scalable designs. Let's break down everything in a structured and digestible way.
 
 ## 🔹 Part 1: Core CSS Principles
@@ -36,13 +38,13 @@ Universal Selector & Inherited Styles → * { margin: 0; }
 
 Elements are naturally arranged from top to bottom and left to right (for LTR languages).
 
-Block-level elements (e.g., <div>, <p>, <h1>):
+- Block-level elements (e.g., `<div>`, `<p>`, `<h1>`):
 
-Take up full width and start on a new line.
+- Take up full width and start on a new line.
 
-Inline elements (e.g., <span>, <a>, <strong>):
+- Inline elements (e.g., `<span>`, `<a>`, `<strong>`):
 
-Only take up as much width as needed.
+- Only take up as much width as needed.
 
 ### 👉 Example of Normal Flow
 
