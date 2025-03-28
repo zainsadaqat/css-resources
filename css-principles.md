@@ -4,7 +4,7 @@ CSS is the foundation of styling websites, and understanding CSS principles, doc
 
 ## 🔹 Part 1: Core CSS Principles
 
-Before diving into units, we need to understand how CSS works behind the scenes.
+We need to understand how CSS works behind the scenes.
 
 ### 1️⃣ CSS is a Declarative Language
 
