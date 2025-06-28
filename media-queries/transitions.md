@@ -1,7 +1,7 @@
 # Transitions and Animations
 
 ## 📌 What You’ll Learn in This Guide
-- ✅ What transition and transform are
+- ✅ What transitions and transform are
 - ✅ How to use them effectively
 - ✅ Where to apply them for best results
 - ✅ Common mistakes and restrictions
