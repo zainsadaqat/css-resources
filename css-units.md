@@ -1,6 +1,6 @@
 # CSS Units  
 
-CSS has two main types of units:
+CSS has two main types of units: 
 - ✅ Absolute Units → Fixed values (e.g., px, cm, in)
 - ✅ Relative Units → Adjust based on screen size or parent elements (e.g., em, rem, %, vh, vw)
 
