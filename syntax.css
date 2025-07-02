@@ -4,6 +4,8 @@ selector {
   property: value;
 }
 
+Selectors are used to select the HTML elements you want to style.
+
 h1 {
   color: red;
 }
